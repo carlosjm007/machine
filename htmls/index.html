@@ -1,0 +1,92 @@
+{% load staticfiles %}
+<script src="/static/js/webcam.js"></script> 
+<script type="text/javascript" src="/static/js/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/static/js/p5.min.js"></script>
+<script src="/static/js/p5.dom.js"></script>
+<script src="/static/js/sketch.js"></script>
+<div id="my_camera" style="width:100px; height:100px;"></div>
+<div id="my_result"></div>
+<form id="formulario">
+	{% csrf_token %}
+	<input type="text" name="foto" id="texto" hidden></input>
+	<input type="text" name="objetivo" id="letras"></input>
+</form>
+<p id="pixel"></p>
+<button onclick="intervalos();">Capturar</button>
+<button onclick="enviar();">enviar</button>
+<button onclick="encajar();">encajar</button>
+<button onclick="predecir();">predecir</button>
+<div id="vuelta"></div>
+<script language="JavaScript">
+	var $myVar
+	$i = 0;
+	Webcam.attach( '#my_camera' );
+	$imagenes = [];
+	$objetivos = [];
+	//var myVar = setInterval(take_snapshot, 10000);
+
+	function intervalos () {
+		$myVar = setInterval(function(){guardar()}, 100);
+	}
+
+	function take_snapshot() {
+		Webcam.snap(function(data_uri){
+			document.getElementById('my_result').innerHTML = '<img src="'+data_uri+'"/>';
+			var raw_image_data = data_uri.replace(/^data\:image\/\w+\;base64\,/, '');
+			$("#texto").val(raw_image_data);
+			$imagenes[$imagenes.length] = raw_image_data;
+			$objetivos[$objetivos.length] = $("#letras").val();
+		});
+	}
+	function guardar(){
+		if ($i < 200){
+			take_snapshot();
+			$i++;
+			document.getElementById('pixel').innerHTML = 200 - $i ;
+		}else{
+			$i = 0;
+			clearInterval($myVar);
+		}
+	}
+	function enviar_to_url(){
+		$.ajax({
+			type: "POST",
+			url: /foto/,
+			data: $("#formulario").serialize(),
+			success: function(msg){
+				console.log(msg);
+				//document.getElementById('pixel').innerHTML = msg.foto;
+			},
+			dataType: "JSON"
+		});
+	}
+
+	function enviar(){
+		for(var u = 0; u < $imagenes.length; u++){
+			$("#texto").val($imagenes[u]);
+			$("#letras").val($objetivos[u]);
+			enviar_to_url();
+		}
+	}
+
+	function encajar(){
+		$.getJSON( "/encajar/", function( data ) {
+			console.log(data);
+		});
+	}
+
+	function predecir(){
+		take_snapshot();
+		$.ajax({
+			type: "POST",
+			url: /predecir/,
+			data: $("#formulario").serialize(),
+			success: function(msg){
+				console.log(msg);
+				//document.getElementById('pixel').innerHTML = msg.foto;
+			},
+			dataType: "JSON"
+		});
+	}
+</script>
+<!-- <a href="javascript:void(take_snapshot())">Tome la fotografia apachurrando aquí</a> -->
