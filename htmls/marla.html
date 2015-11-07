@@ -1,0 +1,32 @@
+{% load staticfiles %}
+<script src="/static/js/webcam.js"></script> 
+<script type="text/javascript" src="/static/js/bower_components/jquery/dist/jquery.min.js"></script>
+<div id="my_camera" style="width:320px; height:240px;"></div>
+<div id="my_result"></div>
+<form id="formulario">
+	{% csrf_token %}
+	<input type="text" name="foto" id="texto"></input>
+</form>
+
+<script language="JavaScript">
+	Webcam.attach( '#my_camera' );
+
+	function take_snapshot() {
+		Webcam.snap( function(data_uri) {
+			document.getElementById('my_result').innerHTML = '<img src="'+data_uri+'"/>';
+			var raw_image_data = data_uri.replace(/^data\:image\/\w+\;base64\,/, '');
+			$("#texto").val(raw_image_data);
+			$.ajax({
+				type: "POST",
+				url: /foto/,
+				data: $("#formulario").serialize(),
+				success: function(msg){
+					console.log(msg);
+				},
+				dataType: "JSON"
+			});
+		});
+	}
+</script> 
+
+<a href="javascript:void(take_snapshot())">Tome la fotografia apachurrando aquí</a>
