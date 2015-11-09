@@ -1,11 +1,12 @@
+{% extends 'base.html' %}
 {% load staticfiles %}
+{% block contenido %}
 <script src="/static/js/webcam.js"></script> 
-<script type="text/javascript" src="/static/js/bower_components/jquery/dist/jquery.min.js"></script>
-<script src="/static/js/p5.min.js"></script>
+<!-- <script src="/static/js/p5.min.js"></script>
 <script src="/static/js/p5.dom.js"></script>
-<script src="/static/js/sketch.js"></script>
-<div id="my_camera" style="width:100px; height:100px;"></div>
-<div id="my_result"></div>
+<script src="/static/js/sketch.js"></script> -->
+<div id="my_camera" style="width:320px; height:320px;"></div>
+<div id="my_result" style="width:100px; height:100px;"></div>
 <form id="formulario">
 	{% csrf_token %}
 	<input type="text" name="foto" id="texto" hidden></input>
@@ -90,3 +91,4 @@
 	}
 </script>
 <!-- <a href="javascript:void(take_snapshot())">Tome la fotografia apachurrando aquí</a> -->
+{% endblock %}
