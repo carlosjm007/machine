@@ -67,3 +67,13 @@ def predecir(request):
 		data = image.reshape((n_samples, -1))
 		predicted = classifier.predict(data)
 		return JsonResponse({"foto":predicted[0]}, safe=True)
+
+def reset(request):
+	global classifier
+	classifier = svm.SVC(gamma=0.00000001)
+	global imagenes
+	imagenes = []
+	
+	global objetivos
+	objetivos = []
+	return JsonResponse({"respuesta":True}, safe=True)

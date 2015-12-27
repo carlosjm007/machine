@@ -15,6 +15,7 @@ urlpatterns = patterns('',
     url(r'^foto/$','Machine.views.foto'),
     url(r'^encajar/$','Machine.views.encajar'),
     url(r'^predecir/$','Machine.views.predecir'),
+    url(r'^reset/$','Machine.views.reset'),
 )
 
 urlpatterns += staticfiles_urlpatterns()
