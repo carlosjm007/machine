@@ -1,21 +1,21 @@
 from django.conf.urls import patterns,include, url
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-from Machine import views as vista
+
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'Machine.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$',vista.Inicio),
-    url(r'^sobre/$',vista.dinamica),
-    url(r'^pandillagranadilla/$',vista.granadilla),
-    url(r'^Marla/$',vista.Marla),
-    url(r'^foto/$',vista.foto),
-    url(r'^encajar/$',vista.encajar),
-    url(r'^predecir/$',vista.predecir),
-    url(r'^reset/$',vista.reset),
+    url(r'^$','Machine.views.Inicio'),
+    url(r'^sobre/$','Machine.views.dinamica'),
+    url(r'^pandillagranadilla/$','Machine.views.granadilla'),
+    url(r'^Marla/$','Machine.views.Marla'),
+    url(r'^foto/$','Machine.views.foto'),
+    url(r'^encajar/$','Machine.views.encajar'),
+    url(r'^predecir/$','Machine.views.predecir'),
+    url(r'^reset/$','Machine.views.reset'),
 )
 
 urlpatterns += staticfiles_urlpatterns()
