@@ -141,7 +141,7 @@ var Webcam = {
 				Webcam.flip();
 			},
 			function(err) {
-				return self.dispatch('error', "Could not access webcam.", err);
+				return self.dispatch('error', "Parece que tu navegador no nos permite ingresar a tu camara, por favor intenta con Firefox.", err);
 			});
 		}
 		else {
