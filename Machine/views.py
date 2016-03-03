@@ -6,7 +6,8 @@ from django.views.decorators.csrf import csrf_protect
 from sklearn import datasets, svm, metrics
 from PIL import Image
 from io import BytesIO
-import base64, numpy, cv2
+from Machine.models import *
+import base64, numpy, cv2, urllib, json
 
 classifier = svm.SVC(gamma=0.00000001)
 imagenes = []
@@ -26,6 +27,12 @@ def granadilla(request):
 
 def Inicio(request):
 	return render_to_response('index.html',context_instance=RequestContext(request))
+
+def trafico(request):
+	url = "https://www.waze.com/row-rtserver/web/TGeoRSS?ma=600&mj=100&mu=100&left=-73.6557469367981&right=-73.59525346755981&bottom=4.1124837106779415&top=4.153986204540105&_=1450213251904"
+	response = urllib.urlopen(url)
+	data = json.loads(response.read())
+	return JsonResponse(data ,safe = False)
 
 @csrf_protect
 def foto(request):
@@ -77,3 +84,6 @@ def reset(request):
 	global objetivos
 	objetivos = []
 	return JsonResponse({"respuesta":True}, safe=True)
+
+def vista_trafico(request):
+	return render_to_response('trafico.html',context_instance=RequestContext(request))
