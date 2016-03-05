@@ -19,6 +19,7 @@ urlpatterns = patterns('',
     url(r'^reset/$',vista.reset),
     url(r'^traficovista/$',vista.vista_trafico),
     url(r'^trafico/$',vista.trafico),
+    url(r'^suma/$',vista.suma),
 )
 
 urlpatterns += staticfiles_urlpatterns()
