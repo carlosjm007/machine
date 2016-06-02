@@ -90,7 +90,10 @@ DATABASES = {
         'NAME': 'rutas',
         'USER': 'carlosjm5',
         'PASSWORD': 'renault+4',
-        'HOST': 'ec2-52-36-4-76.us-west-2.compute.amazonaws.com',
+        'HOST': 'ec2-52-11-218-51.us-west-2.compute.amazonaws.com',
+        # 'USER': 'postgres',
+        # 'PASSWORD': '111111',
+        # 'HOST': 'localhost',
         'PORT': '5432',
     }
 }

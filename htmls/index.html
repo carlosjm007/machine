@@ -127,13 +127,13 @@
 </div>
 
 <script id="plantilla_imagenes" type="text/x-handlebars-template">
-    <li>
-        <div>
-            <img src="__[imagen]__" />
-        </div>
-        <div><h2><strong>__[nombre]__</strong></h2></div>
-    </li>
-    <li class="divider"></li>
+	<li>
+		<div>
+			<img src="__[imagen]__" />
+		</div>
+		<div><h2><strong>__[nombre]__</strong></h2></div>
+	</li>
+	<li class="divider"></li>
 </script>
 
 <div id="vuelta"></div>
@@ -267,8 +267,13 @@
 
 
 {% block plantilla %}
-<div id="contenedor_imagenes" ALIGN=center>
-</div>
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+	<i class="fa fa-photo fa-fw"></i>  <i class="fa fa-caret-down"></i>
+</a>
+<ul class="dropdown-menu dropdown-messages">
+	<div id="contenedor_imagenes" ALIGN=center>
+	</div>
+</ul>
 {% endblock %}
 
 {% block ButtonUp %}

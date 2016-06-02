@@ -1,0 +1,748 @@
+# -*- coding: utf-8 -*-
+{
+    "alerts": [
+        {
+            "country": "CO",
+            "nThumbsUp": 0,
+            "inscale": false,
+            "comments": [],
+            "isJamUnifiedAlert": false,
+            "city": "Villavicencio",
+            "reportRating": 0,
+            "confidence": 0,
+            "reliability": 5,
+            "nImages": 0,
+            "type": "JAM",
+            "uuid": "85f2fbc9-2ece-3706-b7df-b4587d6491b6",
+            "speed": 0,
+            "reportMood": 34,
+            "roadType": 20,
+            "magvar": 207,
+            "showFacebookPic": false,
+            "subtype": "JAM_HEAVY_TRAFFIC",
+            "wazeData": "world,-73.637283,4.116851,85f2fbc9-2ece-3706-b7df-b4587d6491b6,955014475",
+            "location": {
+                "x": -73.637283,
+                "y": 4.116851
+            },
+            "id": "alert-955014475/85f2fbc9-2ece-3706-b7df-b4587d6491b6",
+            "nComments": 0,
+            "pubMillis": 1464660117220
+        },
+        {
+            "country": "CO",
+            "nThumbsUp": 0,
+            "inscale": false,
+            "comments": [],
+            "isJamUnifiedAlert": false,
+            "city": "Villavicencio",
+            "reportRating": 0,
+            "confidence": 0,
+            "reliability": 5,
+            "nImages": 0,
+            "type": "POLICE",
+            "uuid": "1c313907-5b40-3f40-abb5-1dac538d5d0c",
+            "speed": 0,
+            "reportMood": 34,
+            "roadType": 20,
+            "magvar": 207,
+            "showFacebookPic": false,
+            "subtype": "POLICE_VISIBLE",
+            "wazeData": "world,-73.637283,4.116851,1c313907-5b40-3f40-abb5-1dac538d5d0c,954980393",
+            "location": {
+                "x": -73.637283,
+                "y": 4.116851
+            },
+            "id": "alert-954980393/1c313907-5b40-3f40-abb5-1dac538d5d0c",
+            "nComments": 0,
+            "pubMillis": 1464660004707
+        },
+        {
+            "country": "CO",
+            "nThumbsUp": 15,
+            "city": "Villavicencio",
+            "reportRating": 0,
+            "reliability": 10,
+            "type": "ROAD_CLOSED",
+            "uuid": "c67402f2-2603-3966-9250-f805a5982124",
+            "speed": 0,
+            "reportMood": 0,
+            "subtype": "ROAD_CLOSED_EVENT",
+            "street": "Calle 37",
+            "id": "alert-132040905/c67402f2-2603-3966-9250-f805a5982124",
+            "nComments": 0,
+            "reportBy": "PortiXole",
+            "inscale": false,
+            "comments": [
+                {
+                    "reportBy": "Leons6",
+                    "reportMillis": 1460484303335,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "SantiagoSantanilla",
+                    "reportMillis": 1460755921069,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportMillis": 1460839671647,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "arleyrubio948",
+                    "reportMillis": 1460918449931,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "JulianHerneyLozanoGutierrez",
+                    "reportMillis": 1461441219135,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "BarbaraBarbosaPeaceful4",
+                    "reportMillis": 1461894085285,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportMillis": 1461946075561,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "MiguelCardenasMeow27",
+                    "reportMillis": 1462018331106,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "wilmerpinzon12",
+                    "reportMillis": 1462433043414,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "AndersonMartinezPt",
+                    "reportMillis": 1463288074203,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "fabiocabreragamez",
+                    "reportMillis": 1463515840425,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "Paulax1102",
+                    "reportMillis": 1463772189387,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "Claumejiaoso",
+                    "reportMillis": 1463870190331,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "viviamsarita",
+                    "reportMillis": 1464218770397,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "mayobato",
+                    "reportMillis": 1464539712360,
+                    "isThumbsUp": true
+                }
+            ],
+            "isJamUnifiedAlert": false,
+            "confidence": 5,
+            "nImages": 0,
+            "magvar": 0,
+            "showFacebookPic": false,
+            "wazeData": "world,-73.638038,4.150111,c67402f2-2603-3966-9250-f805a5982124,132040905",
+            "reportDescription": "Obras en la Vía ",
+            "location": {
+                "x": -73.638038,
+                "y": 4.150111
+            },
+            "pubMillis": 1460382697416
+        },
+        {
+            "reportBy": "czar740",
+            "country": "CO",
+            "nThumbsUp": 11,
+            "inscale": false,
+            "comments": [
+                {
+                    "reportBy": "nandonando02",
+                    "reportMillis": 1463077808124,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "pasciencia",
+                    "reportMillis": 1463080318848,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "juandm19",
+                    "reportMillis": 1463159410745,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "GuilleCerete",
+                    "reportMillis": 1463197540458,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "monicarico1",
+                    "reportMillis": 1463466559019,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "Juliocesar_2173",
+                    "reportMillis": 1463632120216,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "HermanRodriguezMeow8",
+                    "reportMillis": 1463664196341,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "simeonperillaDino",
+                    "reportMillis": 1463789501704,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "La_cachaza",
+                    "reportMillis": 1464029717042,
+                    "text": "eso ya paso!!!",
+                    "isThumbsUp": false
+                },
+                {
+                    "reportBy": "yamirtj",
+                    "reportMillis": 1464044448293,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "JuanCamiloMejiaSpeedy",
+                    "reportMillis": 1464233807335,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "",
+                    "reportMillis": 1464289797814,
+                    "isThumbsUp": true
+                }
+            ],
+            "isJamUnifiedAlert": false,
+            "reportRating": 0,
+            "confidence": 5,
+            "reliability": 10,
+            "nImages": 0,
+            "type": "ROAD_CLOSED",
+            "uuid": "fe90b4eb-29f6-3282-9fb7-ef692096220c",
+            "nearBy": "Villavicencio",
+            "speed": 0,
+            "reportMood": 0,
+            "magvar": 0,
+            "showFacebookPic": false,
+            "subtype": "ROAD_CLOSED_EVENT",
+            "wazeData": "world,-73.639655,4.134788,fe90b4eb-29f6-3282-9fb7-ef692096220c,67389736",
+            "reportDescription": "Obras en la Vía",
+            "location": {
+                "x": -73.639655,
+                "y": 4.134788
+            },
+            "id": "alert-67389736/fe90b4eb-29f6-3282-9fb7-ef692096220c",
+            "nComments": 1,
+            "pubMillis": 1463075545972
+        },
+        {
+            "country": "CO",
+            "nThumbsUp": 11,
+            "city": "Villavicencio",
+            "reportRating": 0,
+            "reliability": 10,
+            "type": "ROAD_CLOSED",
+            "uuid": "dda3bd1c-ea20-3d32-99cb-9900cdf17982",
+            "speed": 0,
+            "reportMood": 0,
+            "subtype": "ROAD_CLOSED_EVENT",
+            "street": "Calle 37",
+            "id": "alert-132041070/dda3bd1c-ea20-3d32-99cb-9900cdf17982",
+            "nComments": 0,
+            "reportBy": "PortiXole",
+            "inscale": false,
+            "comments": [
+                {
+                    "reportBy": "ArmandoGutierrezSpeedy6",
+                    "reportMillis": 1460495133631,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "kadirtj",
+                    "reportMillis": 1461293256917,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "WilliamHerreraCool48",
+                    "reportMillis": 1461351776255,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "JasonAndresj",
+                    "reportMillis": 1461378056785,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "MyriamCandela",
+                    "reportMillis": 1461985931597,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "Solirosbel",
+                    "reportMillis": 1462246506511,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "Alejo94Perez",
+                    "reportMillis": 1462564631120,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "ferneyp",
+                    "reportMillis": 1462569110145,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "GermanPreciadoOpayome",
+                    "reportMillis": 1462992436448,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportMillis": 1463188162438,
+                    "isThumbsUp": true
+                },
+                {
+                    "reportBy": "Claumejiaoso",
+                    "reportMillis": 1463870517404,
+                    "isThumbsUp": true
+                }
+            ],
+            "isJamUnifiedAlert": false,
+            "confidence": 5,
+            "nImages": 0,
+            "magvar": 0,
+            "showFacebookPic": false,
+            "wazeData": "world,-73.638896,4.149825,dda3bd1c-ea20-3d32-99cb-9900cdf17982,132041070",
+            "reportDescription": "Obras en la Vía ",
+            "location": {
+                "x": -73.638896,
+                "y": 4.149825
+            },
+            "pubMillis": 1460382697694
+        },
+        {
+            "country": "CO",
+            "nThumbsUp": 0,
+            "city": "Villavicencio",
+            "reportRating": 1,
+            "reliability": 5,
+            "type": "JAM",
+            "uuid": "90e9ac21-3494-3ff6-a1e2-5478c33e0ad0",
+            "speed": 0,
+            "reportMood": 23,
+            "subtype": "",
+            "street": "Carrera 40",
+            "id": "alert-1059099154/90e9ac21-3494-3ff6-a1e2-5478c33e0ad0",
+            "nComments": 0,
+            "reportBy": "Yamileg2",
+            "inscale": false,
+            "comments": [],
+            "isJamUnifiedAlert": false,
+            "confidence": 0,
+            "nImages": 0,
+            "roadType": 2,
+            "magvar": 197,
+            "showFacebookPic": false,
+            "wazeData": "world,-73.638333,4.137124,90e9ac21-3494-3ff6-a1e2-5478c33e0ad0,1059099154",
+            "location": {
+                "x": -73.638333,
+                "y": 4.137124
+            },
+            "pubMillis": 1464660262334
+        },
+        {
+            "country": "CO",
+            "nThumbsUp": 0,
+            "city": "Villavicencio",
+            "reportRating": 1,
+            "reliability": 5,
+            "type": "JAM",
+            "uuid": "401e365f-27b5-3a4b-bcd6-c34b96ab09b1",
+            "speed": 0,
+            "reportMood": 23,
+            "subtype": "JAM_HEAVY_TRAFFIC",
+            "street": "Carrera 40",
+            "id": "alert-1059101774/401e365f-27b5-3a4b-bcd6-c34b96ab09b1",
+            "nComments": 0,
+            "reportBy": "Yamileg2",
+            "inscale": false,
+            "comments": [],
+            "isJamUnifiedAlert": false,
+            "confidence": 0,
+            "nImages": 0,
+            "roadType": 2,
+            "magvar": 199,
+            "showFacebookPic": false,
+            "wazeData": "world,-73.638562,4.136373,401e365f-27b5-3a4b-bcd6-c34b96ab09b1,1059101774",
+            "location": {
+                "x": -73.638562,
+                "y": 4.136373
+            },
+            "pubMillis": 1464660272190
+        },
+        {
+            "country": "CO",
+            "nThumbsUp": 0,
+            "city": "Villavicencio",
+            "reportRating": 1,
+            "reliability": 5,
+            "type": "JAM",
+            "uuid": "29b8fc78-34c0-34bd-a2d2-9bc77fa71e1d",
+            "speed": 0,
+            "reportMood": 23,
+            "subtype": "JAM_STAND_STILL_TRAFFIC",
+            "street": "Carrera 40",
+            "id": "alert-1059110801/29b8fc78-34c0-34bd-a2d2-9bc77fa71e1d",
+            "nComments": 0,
+            "reportBy": "Yamileg2",
+            "inscale": false,
+            "comments": [],
+            "isJamUnifiedAlert": false,
+            "confidence": 0,
+            "nImages": 0,
+            "roadType": 2,
+            "magvar": 199,
+            "showFacebookPic": false,
+            "wazeData": "world,-73.639042,4.134933,29b8fc78-34c0-34bd-a2d2-9bc77fa71e1d,1059110801",
+            "location": {
+                "x": -73.639042,
+                "y": 4.134933
+            },
+            "pubMillis": 1464660295267
+        },
+        {
+            "country": "CO",
+            "nThumbsUp": 0,
+            "city": "Villavicencio",
+            "reportRating": 1,
+            "reliability": 6,
+            "type": "POLICE",
+            "uuid": "7605364c-f1e6-3a08-8fc0-5eb8022c56e6",
+            "speed": 0,
+            "reportMood": 23,
+            "subtype": "POLICE_VISIBLE",
+            "street": "Carrera 40",
+            "id": "alert-1059117699/7605364c-f1e6-3a08-8fc0-5eb8022c56e6",
+            "nComments": 1,
+            "reportBy": "Yamileg2",
+            "inscale": false,
+            "comments": [
+                {
+                    "reportBy": "Yamileg2",
+                    "reportMillis": 1464660333256,
+                    "isThumbsUp": false
+                }
+            ],
+            "isJamUnifiedAlert": false,
+            "confidence": 0,
+            "nImages": 0,
+            "roadType": 2,
+            "magvar": 199,
+            "showFacebookPic": false,
+            "wazeData": "world,-73.639061,4.134874,7605364c-f1e6-3a08-8fc0-5eb8022c56e6,1059117699",
+            "location": {
+                "x": -73.639061,
+                "y": 4.134874
+            },
+            "pubMillis": 1464660320337
+        },
+        {
+            "reportBy": "Yamileg2",
+            "country": "CO",
+            "nThumbsUp": 0,
+            "inscale": false,
+            "comments": [],
+            "isJamUnifiedAlert": false,
+            "reportRating": 1,
+            "confidence": 0,
+            "reliability": 5,
+            "nImages": 0,
+            "type": "POLICE",
+            "uuid": "b3ab0adb-c1b6-3c80-ac5b-3309ea59e768",
+            "nearBy": "Villavicencio",
+            "speed": 0,
+            "reportMood": 23,
+            "roadType": 2,
+            "magvar": 19,
+            "showFacebookPic": false,
+            "subtype": "",
+            "wazeData": "world,-73.639062,4.134871,b3ab0adb-c1b6-3c80-ac5b-3309ea59e768,1059126302",
+            "location": {
+                "x": -73.639062,
+                "y": 4.134871
+            },
+            "id": "alert-1059126302/b3ab0adb-c1b6-3c80-ac5b-3309ea59e768",
+            "nComments": 0,
+            "pubMillis": 1464660340166
+        },
+        {
+            "country": "CO",
+            "nThumbsUp": 0,
+            "city": "Villavicencio",
+            "reportRating": 1,
+            "reliability": 5,
+            "type": "HAZARD",
+            "uuid": "7580b752-1388-35ae-8bb4-f2f4643cd973",
+            "speed": 0,
+            "reportMood": 23,
+            "subtype": "HAZARD_WEATHER_FLOOD",
+            "street": "Carrera 40",
+            "id": "alert-1059136269/7580b752-1388-35ae-8bb4-f2f4643cd973",
+            "nComments": 0,
+            "reportBy": "Yamileg2",
+            "inscale": false,
+            "comments": [],
+            "isJamUnifiedAlert": false,
+            "confidence": 0,
+            "nImages": 0,
+            "roadType": 2,
+            "magvar": 199,
+            "showFacebookPic": false,
+            "wazeData": "world,-73.639064,4.134866,7580b752-1388-35ae-8bb4-f2f4643cd973,1059136269",
+            "location": {
+                "x": -73.639064,
+                "y": 4.134866
+            },
+            "pubMillis": 1464660371605
+        },
+        {
+            "country": "CO",
+            "nThumbsUp": 0,
+            "city": "Villavicencio",
+            "reportRating": 1,
+            "reliability": 5,
+            "type": "ACCIDENT",
+            "uuid": "f7287a28-bff6-3e36-a301-3fb58ff8012e",
+            "speed": 0,
+            "reportMood": 23,
+            "subtype": "ACCIDENT_MINOR",
+            "street": "Carrera 40",
+            "id": "alert-1059141778/f7287a28-bff6-3e36-a301-3fb58ff8012e",
+            "nComments": 0,
+            "reportBy": "Yamileg2",
+            "inscale": true,
+            "comments": [],
+            "isJamUnifiedAlert": false,
+            "confidence": 0,
+            "nImages": 0,
+            "roadType": 7,
+            "magvar": 199,
+            "showFacebookPic": false,
+            "wazeData": "world,-73.639173,4.134523,f7287a28-bff6-3e36-a301-3fb58ff8012e,1059141778",
+            "location": {
+                "x": -73.639173,
+                "y": 4.134523
+            },
+            "pubMillis": 1464660388627
+        },
+        {
+            "country": "CO",
+            "nThumbsUp": 0,
+            "city": "Villavicencio",
+            "reportRating": 1,
+            "reliability": 5,
+            "type": "JAM",
+            "uuid": "2f2ebe5e-fc1d-39e6-920c-7328b75427b6",
+            "speed": 0,
+            "reportMood": 23,
+            "subtype": "JAM_MODERATE_TRAFFIC",
+            "street": "Carrera 48",
+            "id": "alert-1059216205/2f2ebe5e-fc1d-39e6-920c-7328b75427b6",
+            "nComments": 0,
+            "reportBy": "Yamileg2",
+            "inscale": true,
+            "comments": [],
+            "isJamUnifiedAlert": false,
+            "confidence": 0,
+            "nImages": 0,
+            "roadType": 6,
+            "magvar": 212,
+            "showFacebookPic": false,
+            "wazeData": "world,-73.644396,4.121018,2f2ebe5e-fc1d-39e6-920c-7328b75427b6,1059216205",
+            "location": {
+                "x": -73.644396,
+                "y": 4.121018
+            },
+            "pubMillis": 1464660618317
+        }
+    ],
+    "endTimeMillis": 1464661680000,
+    "startTimeMillis": 1464661620000,
+    "startTime": "2016-05-31 02:27:00:000",
+    "endTime": "2016-05-31 02:28:00:000",
+    "jams": [
+        {
+            "severity": 2,
+            "country": "CO",
+            "level": 5,
+            "line": [
+                {
+                    "x": -73.639655,
+                    "y": 4.134788
+                },
+                {
+                    "x": -73.639454,
+                    "y": 4.134597
+                },
+                {
+                    "x": -73.639382,
+                    "y": 4.134462
+                },
+                {
+                    "x": -73.63935,
+                    "y": 4.134252
+                },
+                {
+                    "x": -73.639341,
+                    "y": 4.134006
+                }
+            ],
+            "blockType": "ROAD_CLOSED_EVENT",
+            "length": 98,
+            "turnType": "NONE",
+            "type": "Medium",
+            "blockingAlertID": 67389736,
+            "blockExpiration": 1464670800000,
+            "uuid": "4e6183f5-83f5-3ff9-aca4-ba911be364d5",
+            "endNode": "Villavicencio",
+            "speed": 0,
+            "segments": [
+                {
+                    "fromNode": 231026048,
+                    "ID": 141512529,
+                    "toNode": 231026049,
+                    "isForward": true
+                }
+            ],
+            "blockingAlertUuid": "fe90b4eb-29f6-3282-9fb7-ef692096220c",
+            "roadType": 4,
+            "delay": -1,
+            "blockDescription": "Obras en la Vía",
+            "updateMillis": 1464661796005,
+            "startNode": "Villavicencio",
+            "id": 1331758055,
+            "blockStartTime": 1463072400000,
+            "blockUpdate": 1463075545972,
+            "pubMillis": 1464416379480
+        },
+        {
+            "country": "CO",
+            "city": "Villavicencio",
+            "line": [
+                {
+                    "x": -73.638038,
+                    "y": 4.150111
+                },
+                {
+                    "x": -73.638446,
+                    "y": 4.149941
+                },
+                {
+                    "x": -73.63872,
+                    "y": 4.150036
+                },
+                {
+                    "x": -73.638896,
+                    "y": 4.149825
+                }
+            ],
+            "type": "Medium",
+            "blockingAlertID": 132040905,
+            "blockExpiration": 1464930000000,
+            "uuid": "b1075399-50aa-37f3-9561-2e7dc89cc840",
+            "endNode": "Carrera 33 A",
+            "speed": 0,
+            "segments": [
+                {
+                    "fromNode": 87393381,
+                    "ID": 298206455,
+                    "toNode": 244569089,
+                    "isForward": true
+                }
+            ],
+            "street": "Calle 37",
+            "id": 1297266743,
+            "blockStartTime": 1459573200000,
+            "blockUpdate": 1460382697416,
+            "severity": 3,
+            "level": 5,
+            "blockType": "ROAD_CLOSED_EVENT",
+            "length": 112,
+            "turnType": "NONE",
+            "blockingAlertUuid": "c67402f2-2603-3966-9250-f805a5982124",
+            "roadType": 1,
+            "delay": -1,
+            "blockDescription": "Obras en la Vía ",
+            "updateMillis": 1464661796131,
+            "pubMillis": 1464168320004
+        },
+        {
+            "country": "CO",
+            "city": "Villavicencio",
+            "line": [
+                {
+                    "x": -73.638896,
+                    "y": 4.149825
+                },
+                {
+                    "x": -73.63872,
+                    "y": 4.150036
+                },
+                {
+                    "x": -73.638446,
+                    "y": 4.149941
+                },
+                {
+                    "x": -73.638038,
+                    "y": 4.150111
+                }
+            ],
+            "type": "Medium",
+            "blockingAlertID": 132041070,
+            "blockExpiration": 1464930000000,
+            "uuid": "3f2b9428-22be-32bc-9383-ea85d2af640a",
+            "endNode": "Carrera 33/Calle de las Tipografías",
+            "speed": 0,
+            "segments": [
+                {
+                    "fromNode": 244569089,
+                    "ID": 298206455,
+                    "toNode": 87393381,
+                    "isForward": false
+                }
+            ],
+            "street": "Calle 37",
+            "id": 1331757348,
+            "blockStartTime": 1459573200000,
+            "blockUpdate": 1460382697694,
+            "severity": 3,
+            "level": 5,
+            "blockType": "ROAD_CLOSED_EVENT",
+            "length": 112,
+            "turnType": "NONE",
+            "blockingAlertUuid": "dda3bd1c-ea20-3d32-99cb-9900cdf17982",
+            "roadType": 1,
+            "delay": -1,
+            "blockDescription": "Obras en la Vía ",
+            "updateMillis": 1464661793319,
+            "pubMillis": 1464416378689
+        }
+    ]
+}

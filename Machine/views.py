@@ -86,7 +86,4 @@ def reset(request):
 	return JsonResponse({"respuesta":True}, safe=True)
 
 def vista_trafico(request):
-	return render_to_response('trafico.html',context_instance=RequestContext(request))
-
-def suma(request):
-	return render_to_response('sum.html',context_instance=RequestContext(request))
+	return render_to_response('trafico.html',context_instance=RequestContext(request))	
