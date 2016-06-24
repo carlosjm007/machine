@@ -25,7 +25,7 @@ try:
 	# 	password='111111')
 	cur = con.cursor()
 	datos = traer_datos()
-	print datos["endTimeMillis"], datos["startTimeMillis"], datos["startTime"], datos["endTime"]
+	print None, datos["endTimeMillis"]
 
 	endTimeMillis = datos["endTimeMillis"]
 	startTimeMillis = datos["startTimeMillis"]
@@ -69,6 +69,10 @@ try:
 			lugar_id = cur.fetchone()[0]
 			print "si hay lugar", lugar_id
 
+		try:
+			blockType = data["blockType"]
+		except:
+			blockType = "JAM"
 		# Guardar cada trancon
 
 	for data in datos["alerts"]:
