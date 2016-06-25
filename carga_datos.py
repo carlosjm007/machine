@@ -21,9 +21,51 @@ for parte in informacion:
 	datos = traer_datos(parte["url"])
 	startTime = conv_to_date(datos["startTime"])
 	endTime = conv_to_date(datos["endTime"])
+	for data in datos["alerts"]:
+		try:
+			lugar_id = lugar.objects.get(ciudad = parte["ciudad"], nombre = data["street"])
+		except:
+			id_lugar = lugar.objects.all().count()
+			lugar_id = lugar.objects.create(id = id_lugar + 1, ciudad = parte["ciudad"], nombre = data["street"])
+		try:
+			lugar_end_id = lugar.objects.get(ciudad = parte["ciudad"], nombre = data["endNode"])
+		except lugar.DoesNotExist:
+			id_lugar_end = lugar.objects.all().count()
+			lugar_end_id = lugar.objects.create(id = id_lugar_end + 1, ciudad = parte["ciudad"], nombre = data["endNode"])
+		except KeyError:
+			lugar_end_id = None
+		id_evento = evento.objects.all().count()
+		evento_id = evento.objects.create(
+				id = id_evento + 1,
+				endTimeMillis=datos["endTimeMillis"],
+				startTimeMillis=datos["startTimeMillis"],
+				startTime=startTime,
+				endTime=endTime,
+				idwaze=data["id"],
+				lugar=lugar_id,
+				tipo=data["type"]
+			)
+		id_punto = punto.objects.all().count()
+		p = punto.objects.create(
+				id = id_punto + 1,
+				evento = evento_id,
+				latitud = data["location"]["y"],
+				longitud = data["location"]["x"]
+			)
+		id_alerta = alerta.objects.all().count()
+		try:
+			reportDescription = data["reportDescription"]
+		except KeyError:
+			reportDescription = ""
+		a = alerta(
+				descripcion = reportDescription,
+				subtipo = data["subtype"],
+				confiabilidad = data["reliability"],
+				evento = evento_id,
+				pubMillis = data["pubMillis"],
+			)
+		a.save()
 	for data in datos["jams"]:
-		# lugar_id = lugar.objects.get(ciudad = parte["ciudad"], nombre = data["street"])
-		# print lugar_id
 		try:
 			lugar_id = lugar.objects.get(ciudad = parte["ciudad"], nombre = data["street"])
 		except:
@@ -55,25 +97,23 @@ for parte in informacion:
 					latitud = coordenadas["y"],
 					longitud = coordenadas["x"]
 				)
+		try:
+			blockingAlertUuid = data["blockingAlertUuid"]
+		except KeyError:
+			blockingAlertUuid = ""
 		id_trancon = trancon.objects.all().count()
-		# t = trancon(
-		# 		id = id_trancon + 1,
-		# 		severidad=data["severity"],
-		# 		nivel=data["level"],
-		# 		longitud=data["length"],
-		# 		lugarend=lugar_end_id,
-		# 		velocidad=data["speed"],
-		# 		alerta=,
-		# 		lugarstart=data[""],
-		# 		evento=evento_id,
-		# 		blockExpiration=data[""],
-		# 		updateMillis=data["updateMillis"],
-		# 		blockStartTime=data[""],
-		# 		blockUpdate=data[""],
-		# 		pubMillis=data["pubMillis"]
-		# 	)
-
-
+		t = trancon(
+				id = id_trancon + 1,
+				severidad=data["severity"],
+				nivel=data["level"],
+				longitud=data["length"],
+				lugarend=lugar_end_id,
+				velocidad=data["speed"],
+				alerta=blockingAlertUuid,
+				evento=evento_id,
+				pubMillis=data["pubMillis"]
+			)
+		t.save()
 		# pais.objects.create(id = 2, nombre = data["country"])
 
 

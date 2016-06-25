@@ -64,13 +64,9 @@ class trancon(models.Model):
 	longitud = models.CharField(max_length = 45, db_tablespace= "longitud")
 	lugarend = models.ForeignKey(lugar, blank=True, null=True, related_name='lugarend')
 	velocidad = models.CharField(max_length = 50, db_tablespace= "velocidad")
-	alerta = models.OneToOneField(alerta, blank=True, null=True)
+	alerta = models.CharField(max_length = 200, db_tablespace= "alerta")
 	lugarstart = models.ForeignKey(lugar, blank=True, null=True, related_name='lugarstart')
 	evento = models.OneToOneField(evento)
-	blockExpiration = models.CharField(max_length = 15, db_tablespace= "blockExpiration")
-	updateMillis = models.CharField(max_length = 15, db_tablespace= "updateMillis")
-	blockStartTime = models.CharField(max_length = 15, db_tablespace= "blockStartTime")
-	blockUpdate = models.CharField(max_length = 15, db_tablespace= "blockUpdate")
 	pubMillis = models.CharField(max_length = 15, db_tablespace= "pubMillis")
 	class Meta:
 		db_table = 'trancon'
